@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Icons -->
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        >
+
+        <!-- CSS -->
+        <link 
+            rel="stylesheet" 
+            href="/css/style.css"
+        >
+
+        <!-- Script -->
+        <script src="/script/script.js" defer></script>
+
+        <title>Lista de Tarefas</title>
+    </head>
+    <body>
+
+        <div class="content">
+            
+            <div class="sideBar">
+                <img src="https://github.com/CaioMelo00.png" class="picture" />
+                <h2>Caio Vinícius</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Donec tortor nisi, lacinia eu congue eget, fermentum in augue. 
+                    In hac habitasse platea dictumst. Maecenas viverra pellentesque orci ac tristique. 
+                    Proin in dapibus tortor. Cras ornare cursus massa sed cursus. 
+                    Proin sollicitudin tempus commodo. 
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://github.com/CaioMelo00" target="_blank" rel="noreferrer">
+                            <i class="fa fa-github"></i>GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/caio-vin%C3%ADcius-a4ab74180/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-linkedin"></i>Linkedin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noreferrer">
+                            <i class="fa fa-youtube-play"></i>Youtube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noreferrer">
+                            <i class="fa fa-twitter"></i>Twitter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="main-content">
+                <h1 class="title">Lista de Tarefas</h1>
+                <div class="todo">
+                    <input type="text" id="inputNewTask" placeholder="Adicionar nova tarefa...">
+                    <select id="listSelection" class="listSelection">
+                        <option value="day" selected>&#9728;&#65039; Dia</option>
+                        <option value="night">&#127761; Noite</option>
+                    </select>
+                    <button id="btnAddTask">
+                        <i class="fa fa-plus"></i>
+                    </button>
+                </div>
+                <div class="lists">
+                    <div class="dayList">
+                        <h2>Dia &#9728;&#65039;</h2>
+                        <ul id="dayTaskList">
+                        </ul>
+                    </div>
+                    <div class="nightList">
+                        <h2>Noite &#127761;</h2>
+                        <ul id="nightTaskList">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    min-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(180deg, #eb9fd3, #ef30b3);
+    
+    color: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 25%;
+    padding: 20px 20px 0 20px;
+    margin-left: 1rem;
+    border-radius: 12px;
+    background-color: #191818;
+}
+
+.sideBar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.sideBar ul > li {
+    list-style-type: none;
+}
+
+.sideBar a {
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.sideBar a:hover {
+    cursor: pointer;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    font-weight: 400;
+
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px black;;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    gap: 10px;
+}
+
+.todo input {
+    width: 350px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    outline: none;
+    font-size: 1.2rem;
+    background: #191818;
+
+    color: #fff;
+}
+
+.todo button {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    outline: none;
+
+    color: #fff;
+}
+
+.todo button:hover {
+    background: #5196f0;
+    border: none;
+    cursor: pointer;
+}
+
+.listSelection {
+    width: 45px;
+    border-radius: 12px;
+    border: 1px solid #191818;
+    background: #191818;
+    outline: none;
+    
+    color: #fff;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    column-gap: 0.8rem;
+    padding: 1rem 1rem;
+}
+
+.dayList, .nightList {
+    text-align: center;
+    padding: 1rem;
+    min-height: 100%;
+    width: 50%;
+    border-radius: 12px;
+    background-color: #191818;
+    box-shadow: 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dayList h2, .nightList h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+#dayTaskList, #nightTaskList {
+    padding: 0;
+    margin: 0;
+}
+
+#dayTaskList li, #nightTaskList li{
+    display: flex;
+    padding: 10px;
+    background: #191818;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnAction {
+    border-radius: 20px;
+    border: 1px solid #191818;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    cursor: pointer;
+    background: #2b2a2a;
+    outline: none;
+    
+    color: #fff;
+}
+
+.btnAction:hover {
+    background: #3c3a3a;
+}
+
+.taskText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
